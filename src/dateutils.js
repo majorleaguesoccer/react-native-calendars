@@ -46,7 +46,7 @@ function weekDayNames(firstDayOfWeek = 0) {
   if (dayShift) {
     weekDaysNames = weekDaysNames.slice(dayShift).concat(weekDaysNames.slice(0, dayShift));
   }
-  return weekDaysNames;
+  return weekDaysNames.map(d => d.toUpperCase());
 }
 
 function page(xd, firstDayOfWeek) {
