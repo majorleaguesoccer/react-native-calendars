@@ -1,7 +1,7 @@
 {
   "name": "@mls-digital/react-native-calendars",
   "private": true,
-  "version": "1.21.2",
+  "version": "1.22.0",
   "main": "src/index.js",
   "description": "React Native Calendar Components",
   "scripts": {
