@@ -1,10 +1,10 @@
-import {StyleSheet, Platform} from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 import * as defaultStyle from '../../style';
 
 const STYLESHEET_ID = 'stylesheet.calendar.header';
 
-export default function(theme={}) {
-  const appStyle = {...defaultStyle, ...theme};
+export default function(theme = {}) {
+  const appStyle = { ...defaultStyle, ...theme };
   return StyleSheet.create({
     header: {
       flexDirection: 'row',
@@ -14,10 +14,10 @@ export default function(theme={}) {
       alignItems: 'center'
     },
     monthText: {
-      fontSize: appStyle.textMonthFontSize,
-      fontFamily: appStyle.textMonthFontFamily,
-      fontWeight: appStyle.textMonthFontWeight,
+      fontSize: 20,
+      fontFamily: 'DINNextLTPro-Black',
       color: appStyle.monthTextColor,
+      letterSpacing: 0,
       margin: 10
     },
     arrow: {
@@ -43,8 +43,9 @@ export default function(theme={}) {
       marginBottom: 7,
       width: 32,
       textAlign: 'center',
-      fontSize: appStyle.textDayHeaderFontSize,
-      fontFamily: appStyle.textDayHeaderFontFamily,
+      fontFamily: 'DINNextLTPro-Medium',
+      letterSpacing: 1,
+      fontSize: 8,
       color: appStyle.textSectionTitleColor
     },
     ...(theme[STYLESHEET_ID] || {})
