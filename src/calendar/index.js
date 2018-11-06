@@ -85,7 +85,7 @@ class Calendar extends Component {
       currentMonth = XDate();
     }
     this.state = {
-      currentMonth: currentMonth.toUpperCase()
+      currentMonth
     };
 
     this.updateMonth = this.updateMonth.bind(this);
